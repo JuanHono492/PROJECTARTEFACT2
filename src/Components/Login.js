@@ -39,6 +39,7 @@ const Login = ({ onLogin }) => {
             id="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
+            required
           />
         </div>
         
@@ -49,6 +50,7 @@ const Login = ({ onLogin }) => {
             id="password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
+            required
           />
         </div>
         
@@ -56,6 +58,7 @@ const Login = ({ onLogin }) => {
       </form>
     </div>
   );
+  
 };
 
 export default Login;
